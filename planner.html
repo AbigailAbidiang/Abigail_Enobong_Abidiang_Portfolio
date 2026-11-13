@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Abigail Enobong Abidiang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Abigail <span>Abidiang</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="planner.html" class="active">Academic Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 class="section-title">Interactive Academic Task Planner</h2>
+            <p>Manage coursework, cyber security studies, and travel goals efficiently using this task management interface.</p>
+            <br>
+            <form id="planner-form" class="planner-form">
+                <input type="text" id="task-input" placeholder="Enter a new academic task..." required>
+                <select id="task-category">
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="General Study">General Study</option>
+                    <option value="Personal / Travel">Personal / Travel</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+
+            <ul id="task-list" class="task-list">
+                <!-- Dynamic Tasks Render Here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Abigail Enobong Abidiang. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
